@@ -1,0 +1,82 @@
+div.buyer-forms {
+  height: 100vh;
+  background: url("agriculture.jpeg");
+  background-size: cover;
+  font-family: 'Akaya Telivigala', cursive;
+  display: flex;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+div.buyer-forms>div {
+  flex: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.buyer-forms .form>div {
+  background: white;
+  display: inline-block;
+  text-align: left;
+  padding: 30px 60px;
+  border-radius: 20px;
+}
+
+div.buyer-forms div.sign-up-form {
+  display: inline-block;
+}
+
+div.buyer-forms .signin-other {
+  flex-direction: column;
+}
+
+div.buyer-forms .other-form {
+  margin-top: 50px;
+  padding: 20px 40px;
+  background: #071a52;
+  border-radius: 20px;
+}
+
+div.buyer-forms .other-form a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+div.buyer-forms h3 {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+div.buyer-forms div.signup-field,
+div.signin-field {
+  margin: 20px 0px;
+}
+
+div.buyer-forms label {
+  font-family: 'Exo', sans-serif;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+div.buyer-forms input {
+  width: 250px;
+  padding: 5px 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+div.buyer-forms input[type=submit] {
+  font-family: 'Akaya Telivigala', cursive;
+  padding: 15px;
+  font-size: 23px;
+  cursor: pointer;
+  background: #071a52;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}

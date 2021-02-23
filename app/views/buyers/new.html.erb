@@ -1,0 +1,64 @@
+<div class = "signin-signup buyer-forms">
+  <div class = "form">
+    <div class = "sign-up-form">
+      <h3> Sign up </h3>
+      <%= form_with url: farmers_path do |form| %>
+        <div class = "signup-field">
+          <%= form.label :name, "Name" %>
+          <%= form.text_field :name %>
+        </div>
+        
+        <div class = "signup-field">
+          <%= form.label :email, "Email" %>
+          <%= form.email_field :email %>
+        </div>
+
+        <div class = "signup-field">
+          <%= form.label :password, "Password" %>
+          <%= form.password_field :password %>
+        </div>
+
+        <div class = "signup-field">
+          <%= form.label :address, "Address" %>
+          <%= form.text_field :address %>
+        </div>
+        
+        <div class = "signup-field">
+          <%= form.label :code, "Phone No." %>
+          <%= form.number_field :phone %>
+        </div>
+
+        <div class = "signup-field">
+          <%= form.submit "Sign up" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class = "signin-other">
+    <div class = "form">
+      <div class = "sign-in-form">
+        <h3> Sign in </h3>
+        <%= form_with url: sessions_path do |form| %>
+          <div class = "signin-field">
+            <label> Email </label>
+            <%= form.email_field :email %>
+          </div>
+      
+          <div class = "signin-field">
+            <label> Password </label>
+            <%= form.password_field :password %>
+          </div>
+          
+          <div class = "signin-field">
+            <%= form.submit "Sign in", class: "form-submit" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class = "other-form">
+      <%= link_to "Sign up or sign in as Farmer", new_farmer_path %>
+    </div>
+  </div>
+</div>
