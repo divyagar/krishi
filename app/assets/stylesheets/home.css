@@ -1,10 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  /* border: 1px solid; */
   margin: 0;
   padding: 0;
 }
 
-div.home {
+div.home div.first-section {
   background: #071a52;
   color: white;
   width: 100%;
@@ -13,7 +16,7 @@ div.home {
   box-sizing: border-box;
 }
 
-div.home div.first-section {
+div.home div.inside-first-section {
   border: 1px solid #a7ff83;
   width: 100%;
   height: 100%;
@@ -50,4 +53,79 @@ div.home div.information a {
 
 div.home div.images {
   flex: 50%;
+}
+
+div.home div.process {
+  text-align: center;
+  margin: 100px 0px 50px;
+}
+
+div.home div.process h2 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 20px auto;
+  border-bottom: 1px solid #071a52;
+  width: 30%;
+  padding-bottom: 5px;
+  color: #071a52;
+}
+
+div.home div.step {
+  display: flex;
+  width: 65%;
+  margin: 0px auto;
+}
+
+div.home div.step:nth-of-type(1),
+div.step:nth-of-type(3) {
+  border-right: 10px solid #a7ff83;
+}
+
+div.home div.step:nth-of-type(2) {
+  border-left: 10px solid #a7ff83;
+}
+
+div.home div.step div.step-image {
+  width: 350px;
+  height: 300px;
+}
+
+div.home div.step-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+div.home div.step-desc {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+div.home div.step-desc p {
+  width: 80%;
+  margin: 0px auto;
+}
+
+div.home div.get-started {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+div.home div.get-started a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 15px 30px;
+  border: 1px solid;
+  color: white;
+  background-image: linear-gradient(to bottom right, #086972, #071a52);
+}
+
+div.home div.footer {
+  height: 100px;
+  background: #071a52;
 }

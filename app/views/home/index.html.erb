@@ -1,19 +1,65 @@
 <div class = "home">
-  <div class = "first-section">
-    <div class = "information">
-      <div>
+  <div class = "first-section" id = "first-section">
+    <div class = "inside-first-section">
+      <div class = "information">
         <div>
-          <p> We bring nature to you </p>
+          <div>
+            <p> We bring nature to you </p>
+          </div>
+          <div class = "signup-signin-btn">
+            <%= link_to "Sign up or sign in as farmer", new_farmer_path %> <br/>
+            <%= link_to "Sign up or sign in as buyer", new_buyer_path %>
+          </div>
         </div>
-        <div class = "signup-signin-btn">
-          <%= link_to "Sign up or sign in as farmer", new_farmer_path %> <br/>
-          <%= link_to "Sign up or sign in as buyer", new_buyer_path %>
+      </div>
+
+      <div class = "images">
+
+      </div>
+    </div>
+  </div>
+
+  <div class = "process">
+    <h2> How this works </h2>
+    <div class = "main-process">
+      <div class = "step">
+        <div class = "step-image">
+          <%= image_tag "step-one.jpg" %>
+        </div>
+
+        <div class = "step-desc">
+          <p> Farmers create their profile and post products that they want to sell. </p>
+        </div>
+      </div>
+      
+      <div class = "step">
+        <div class = "step-desc">
+          <p> Buyers create their profile and place orders for products that they want to buy. </p>
+        </div>
+        
+        <div class = "step-image">
+          <%= image_tag "step-two.png" %>
+        </div>
+      </div>
+      
+      <div class = "step">
+        <div class = "step-image">
+          <%= image_tag "step-three.jpg" %>
+        </div>
+
+        <div class = "step-desc">
+          <p> Our delivery team collect products from farmers and delivers them to respective buyers.
+           </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class = "images">
+  <div class = "get-started">
+    <%= link_to "Get Started", "#firstsection" %>
+  </div>
 
-    </div>
+  <div class = "footer">
+
   </div>
 </div>

@@ -4,7 +4,7 @@ div.buyer-forms {
   background-size: cover;
   font-family: 'Akaya Telivigala', cursive;
   display: flex;
-  padding-top: 50px;
+  padding: 50px 100px 0px;
   box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ div.buyer-forms .signin-other {
 }
 
 div.buyer-forms .other-form {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px 40px;
   background: #071a52;
   border-radius: 20px;
@@ -68,6 +68,7 @@ div.buyer-forms input {
   padding: 5px 10px;
   font-size: 16px;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 div.buyer-forms input[type=submit] {
