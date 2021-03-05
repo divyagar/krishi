@@ -2,7 +2,7 @@
   <div class = "form">
     <div class = "sign-up-form">
       <h3> Sign up </h3>
-      <%= form_with url: farmers_path do |form| %>
+      <%= form_with url: buyers_path do |form| %>
         <div class = "signup-field">
           <%= form.label :name, "Name" %>
           <%= form.text_field :name %>
@@ -40,6 +40,8 @@
       <div class = "sign-in-form">
         <h3> Sign in </h3>
         <%= form_with url: sessions_path do |form| %>
+          <%= form.hidden_field :user, :value => "Buyer"%>
+
           <div class = "signin-field">
             <label> Email </label>
             <%= form.email_field :email %>

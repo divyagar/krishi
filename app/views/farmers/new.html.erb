@@ -19,7 +19,7 @@
         </div>
         
         <div class = "signup-field">
-          <%= form.label :code, "Phone No." %>
+          <%= form.label :phone, "Phone No." %>
           <%= form.number_field :phone %>
         </div>
 
@@ -35,6 +35,8 @@
       <div class = "sign-in-form">
         <h3> Sign in </h3>
         <%= form_with url: sessions_path do |form| %>
+          <%= form.hidden_field :user, :value => "Farmer"%>
+
           <div class = "signin-field">
             <label> Email </label>
             <%= form.email_field :email %>
