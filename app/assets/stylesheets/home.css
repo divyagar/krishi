@@ -11,7 +11,7 @@ div.home div.first-section {
   background: #071a52;
   color: white;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -20,6 +20,48 @@ div.home div.inside-first-section {
   border: 1px solid #a7ff83;
   width: 100%;
   height: 100%;
+}
+
+div.home div.inside-first-section div.up-section {
+  padding: 10px 5px;
+  /* border: 1px solid; */
+}
+
+div.home div.navbar {
+  display: flex;
+}
+
+div.home div.navbar div.logo-img {
+  flex: 50%;
+}
+
+div.home div.navbar img {
+  height: 50px;
+}
+
+div.home div.navbar div.navbar-links {
+  margin-right: 50px;
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+}
+
+div.home div.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Didact Gothic', sans-serif;
+  transition: 0.5s;
+}
+
+div.home div.navbar a:hover {
+  color: #a7ff83;
+}
+
+div.home div.inside-first-section div.down-section {
   display: flex;
 }
 

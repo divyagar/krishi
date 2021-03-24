@@ -1,19 +1,35 @@
 <div class = "home">
   <div class = "first-section" id = "first-section">
     <div class = "inside-first-section">
-      <div class = "information">
-        <div>
-          <div>
-            <p> We bring nature to you </p>
+      <div class = "up-section">
+        <div class = "navbar">
+          <div class = "logo-img">
+            <%= image_tag "image.png" %>
           </div>
-          <div class = "signup-signin-btn">
-            <%= link_to "Sign up or sign in as farmer", new_farmer_path %> <br/>
-            <%= link_to "Sign up or sign in as buyer", new_buyer_path %>
+
+          <div class = "navbar-links">
+            <a href = "#"> Home </a>
+            <a href = "#"> Buy Vegetables </a>
+            <a href = "#"> Buy Fruits </a>
+            <a href = "#"> Buy Seeds </a>
           </div>
         </div>
       </div>
+      <div class = "down-section">
+        <div class = "information">
+          <div>
+            <div>
+              <p> We bring nature to you </p>
+            </div>
+            <div class = "signup-signin-btn">
+              <%= link_to "Sign up or sign in as farmer", new_farmer_path %> <br/>
+              <%= link_to "Sign up or sign in as buyer", new_buyer_path %>
+            </div>
+          </div>
+        </div>
 
-      <div class = "images">
+        <div class = "images">
+      </div>
 
       </div>
     </div>
