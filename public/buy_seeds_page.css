@@ -1,0 +1,233 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+div.buy-seeds {
+  margin: 40px 30px;
+}
+
+div.buy-seeds div.search-container {
+  margin: 20px 0px 40px;
+}
+
+div.buy-seeds div.search-container h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 10px 0px 20px;
+  color: #071a52;
+}
+
+div.buy-seeds div.search-container form {
+  margin: 0px 20px;
+}
+
+div.buy-seeds div.search-container form input {
+  border-radius: 10px;
+  border: 1px solid;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+div.buy-seeds div.search-container form input[type="text"] {
+  width: 220px;
+  padding: 15px 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+div.buy-seeds div.search-container form input[type="submit"] {
+  padding: 15px 40px;
+  font-size: 18px;
+  background: #17b978;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+div.buy-seeds div.seed-result-container h3 {
+  font-size: 28px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  color: #071a52;
+  margin: 0px 0px 20px;
+}
+
+div.buy-seeds div.seed-result {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.buy-seeds div.seed {
+  /* border: 1px solid; */
+  width: 270px;
+  margin: 10px 20px;
+  font-family: 'Akaya Telivigala', cursive;
+  overflow: hidden;
+  padding: 0px 2px;
+}
+
+div.buy-seeds div.seed div.seed-img {
+  width: 100%;
+  height: 140px;
+  border: 1px solid;
+  margin-bottom: 5px;
+}
+
+div.buy-seeds div.seed-info {
+  padding: 10px;
+}
+
+div.buy-seeds div.seed-info div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+  font-size: 18px;
+}
+
+div.buy-seeds div.seed-info div h4 {
+  font-weight: bold;
+}
+
+div.buy-seeds div.seed-info div.seed-add button {
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: 'Akaya Telivigala', cursive;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  background: #17b978;
+  outline: none;
+  cursor: pointer;
+}
+
+div.buy-seeds div.seed-info div.seed-add-form {
+  padding: 10px 0px;
+  display: none;
+}
+
+div.buy-seeds div.seed-add-form input {
+  padding: 10px;
+  margin: 0px;
+  font-size: 18px;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+div.buy-seeds div.seed-add-form input[type="number"] {
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #17b978;
+  outline: none;
+}
+
+div.buy-seeds div.seed-add-form input[type="submit"] {
+  width: 32%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+  background: #17b978;
+  outline: none;
+  cursor: pointer;
+}
