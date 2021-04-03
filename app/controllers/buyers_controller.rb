@@ -4,7 +4,10 @@ class BuyersController < ApplicationController
   end
 
   def index
-    render plain: "#{flash[:message]}"
+    lst = current_user
+    @buyer = lst[0]
+    @usertype = lst[1]
+    @orders = @buyer.orders
   end
 
   def create
@@ -24,6 +27,7 @@ class BuyersController < ApplicationController
 
     if buyer.save
       flash[:message] = "mew buyer created"
+      session[:current_buyer_id] = buyer.id
       redirect_to buyers_path
     else
       flash[:message] = "error while creating buyer"

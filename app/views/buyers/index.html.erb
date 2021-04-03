@@ -1,0 +1,29 @@
+
+  <div class="buyer-dashboard">
+    <div class="buyer-info">
+      <div class="name">
+        <h2><%= @buyer.name %></h2>
+      </div>
+    </div>
+
+
+    <div class="orders-container">
+        <% if @orders.count == 0 %>
+            <div class="no-orders">
+                <img src="orders.png" />
+                <p>No orders places</p>
+            </div>
+        <% else %>
+            <div class="orders-heading">
+                <h3>My Orders</h3>
+            </div>
+            <div class="main-orders">
+                <% for order in @orders %>
+                    <%= render partial: "order", locals: {
+                        id: order.id
+                    } %>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+  </div>

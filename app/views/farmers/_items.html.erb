@@ -1,0 +1,24 @@
+
+<div class="items">
+    <div class="items-heading">
+        <h3><%= heading %>s</h3>
+        <a href="#">View more</a>
+    </div>
+    <div class="main-items">
+        <%= render partial: "item", locals: {
+            heading: heading
+        } %>
+        
+        <%= render partial: "item", locals: {
+            heading: heading
+        } %>
+        
+        <%= render partial: "item", locals: {
+            heading: heading
+        } %>
+        
+        <%= render partial: "item", locals: {
+            heading: heading
+        } %>
+    </div>
+</div>

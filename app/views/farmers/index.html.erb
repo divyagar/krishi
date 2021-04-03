@@ -1,0 +1,30 @@
+
+  <div class="farmer-dashboard">
+    <div class="farmer-info">
+      <div class="name">
+        <h2><%= @farmer.name %></h2>
+      </div>
+    </div>
+
+    <div class="items-container">
+      <% if @items.count != 0 %>
+        <div class="no-items">
+          <img src="items.png" />
+          <p>No items available</p>
+        </div>
+      <% else %>
+        <%= render partial: "items", locals: {
+          heading: "Vegetable"
+        } %>
+        
+        <%= render partial: "items", locals: {
+          heading: "Fruit"
+        } %>
+        
+        <%= render partial: "items", locals: {
+          heading: "Seed"
+        } %>
+      <% end %>
+
+    </div>
+  </div>

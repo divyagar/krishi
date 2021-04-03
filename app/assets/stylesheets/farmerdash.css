@@ -1,0 +1,74 @@
+div.farmer-dashboard div.farmer-info {
+  background: #a7ff83;
+  padding: 40px 70px;
+}
+
+div.farmer-dashboard div.name h2 {
+  font-size: 45px;
+  color: #071a52;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+div.farmer-dashboard div.items-container {
+  margin: 20px 50px;
+}
+
+div.farmer-dashboard div.items-heading {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+  align-items: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+div.farmer-dashboard div.items-heading h3 {
+  font-size: 30px;
+  color: #086972;
+  border-left: 5px solid #a7ff83;
+  padding: 10px;
+}
+
+div.farmer-dashboard div.item {
+  font-family: 'Akaya Telivigala', cursive;
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+div.farmer-dashboard div.item div.item-img {
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+}
+
+div.farmer-dashboard div.item-name {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+div.farmer-dashboard div.item-quantity,
+div.item-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+div.farmer-dashboard div.no-items {
+  display: flex;
+  font-family: 'Didact Gothic', sans-serif;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid; */
+  align-items: center;
+  margin: 50px 0px;
+}
+
+div.farmer-dashboard div.no-items img {
+  width: 420px;
+  height: 300px;
+}
+
+div.farmer-dashboard div.no-items p {
+  font-size: 30px;
+}

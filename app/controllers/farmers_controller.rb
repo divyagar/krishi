@@ -4,7 +4,11 @@ class FarmersController < ApplicationController
   end
 
   def index
-    render plain: "#{flash[:message]}"
+    lst = current_user
+    @farmer = lst[0]
+    @usertype = lst[1]
+    @items = Item.where(farmer_id: @farmer.id)
+    puts @items.count
   end
 
   def create
@@ -21,10 +25,10 @@ class FarmersController < ApplicationController
     )
 
     if farmer.save
-      flash[:message] = "created"
+      session[:current_buyer_id] = farmer.id
       redirect_to farmers_path
     else
-      flash[:message] = "error"
+      flash[:error] = "Error while creating farmer"
       redirect_to farmers_path
     end
   end
