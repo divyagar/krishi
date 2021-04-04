@@ -7,23 +7,32 @@
     </div>
 
     <div class="items-container">
-      <% if @items.count != 0 %>
+      <% if @vegetableCount + @fruitCount + @seedCount == 0 %>
         <div class="no-items">
           <img src="items.png" />
           <p>No items available</p>
         </div>
       <% else %>
-        <%= render partial: "items", locals: {
-          heading: "Vegetable"
-        } %>
-        
-        <%= render partial: "items", locals: {
-          heading: "Fruit"
-        } %>
-        
-        <%= render partial: "items", locals: {
-          heading: "Seed"
-        } %>
+        <% if @vegetableCount > 0 %>
+          <%= render partial: "items", locals: {
+            heading: "Vegetable",
+            items: @vegetables
+          } %>
+        <% end %>
+
+        <% if @fruitCount > 0 %>
+          <%= render partial: "items", locals: {
+            heading: "Fruit",
+            items: @fruits
+          } %>
+        <% end %>
+
+        <% if @seedCount > 0 %>
+          <%= render partial: "items", locals: {
+            heading: "Seed",
+            items: @seeds
+          } %>
+        <% end %>
       <% end %>
 
     </div>

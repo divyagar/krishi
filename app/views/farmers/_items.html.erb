@@ -5,20 +5,10 @@
         <a href="#">View more</a>
     </div>
     <div class="main-items">
-        <%= render partial: "item", locals: {
-            heading: heading
-        } %>
-        
-        <%= render partial: "item", locals: {
-            heading: heading
-        } %>
-        
-        <%= render partial: "item", locals: {
-            heading: heading
-        } %>
-        
-        <%= render partial: "item", locals: {
-            heading: heading
-        } %>
+        <% for item in items %>
+            <%= render partial: "item", locals: {
+                item: item
+            } %>
+        <% end %>
     </div>
 </div>

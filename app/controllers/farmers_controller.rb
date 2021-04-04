@@ -7,8 +7,12 @@ class FarmersController < ApplicationController
     lst = current_user
     @farmer = lst[0]
     @usertype = lst[1]
-    @items = Item.where(farmer_id: @farmer.id)
-    puts @items.count
+    @vegetables = Item.where("farmer_id= ? and itemtype= ?", @farmer.id, "Vegetable")
+    @fruits = Item.where("farmer_id= ? and itemtype= ?", @farmer.id, "Fruit")
+    @seeds = Item.where("farmer_id= ? and itemtype= ?", @farmer.id, "Seed")
+    @vegetableCount = @vegetables.count
+    @fruitCount = @fruits.count
+    @seedCount = @seeds.count
   end
 
   def create
