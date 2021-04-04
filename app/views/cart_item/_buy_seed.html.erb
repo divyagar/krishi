@@ -1,0 +1,36 @@
+<div class="seed">
+    <div class="seed-img">
+
+    </div>
+
+    <div class="seed-info">
+        <div class="seed-name">
+            <h4>Name: </h4>
+            <p><%= item.name %></p>
+        </div>
+
+        <div class="seed-price">
+            <h4>Price: </h4>
+            <p><%= item.price_per_kilo %></p>
+        </div>
+
+        <div class="seed-kilos">
+            <h4>Total kilos available: </h4>
+            <p><%= item.quantity %></p>
+        </div>
+
+        <div class="seed-farmer-name">
+            <h4>Farmer Name: </h4>
+            <p><%= Farmer.find(item.farmer_id).name %></p>
+        </div>
+
+        <div id="seed-add0" class="seed-add">
+            <button class="seed-add-btn">Add to cart</button>
+        </div>
+
+        <div id="seed-add-form0" class="seed-add-form">
+            <input type="number" placeholder="Quantity" />
+            <input type="submit" value="Add" />
+        </div>
+    </div>
+</div>
