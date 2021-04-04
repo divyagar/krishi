@@ -9,9 +9,9 @@
 
           <div class = "navbar-links">
             <a href = "#"> Home </a>
-            <a href = "#"> Buy Vegetables </a>
-            <a href = "#"> Buy Fruits </a>
-            <a href = "#"> Buy Seeds </a>
+            <%= link_to "Buy Vegetables", "buy_vegetables/" %>
+            <%= link_to "Buy Fruits", "buy_fruits/" %>
+            <%= link_to "Buy Seeds", "buy_seeds/" %>
           </div>
         </div>
       </div>
@@ -22,8 +22,8 @@
               <p> We bring nature to you </p>
             </div>
             <div class = "signup-signin-btn">
-              <%= link_to "Sign up or sign in as farmer", new_farmer_path %> <br/>
-              <%= link_to "Sign up or sign in as buyer", new_buyer_path %>
+              <%= link_to "Sign up or sign in as farmer", signup_signin_farmer_path %> <br/>
+              <%= link_to "Sign up or sign in as buyer", signup_signin_buyer_path %>
             </div>
           </div>
         </div>
