@@ -1,9 +1,22 @@
 
-  <div class="buyer-dashboard">
+<div class="buyer-dashboard">
+  
+  <div class = "navbar">
+    <div class = "logo-img">
+      <%= image_tag "image.png" %>
+    </div>
+
+    <div class = "navbar-links">
+      <a href = "#"> Home </a>
+      <a href = "#"> Buy Vegetables </a>
+      <a href = "#"> Buy Fruits </a>
+      <a href = "#"> Buy Seeds </a>
+    </div>
+  </div>
     <div class="buyer-info">
-      <div class="name">
-        <h2><%= @buyer.name %></h2>
-      </div>
+        <div class="name">
+            <h2><%= @buyer.name %></h2>
+        </div>
     </div>
 
 
@@ -26,4 +39,4 @@
             </div>
         <% end %>
     </div>
-  </div>
+</div>

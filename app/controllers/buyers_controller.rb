@@ -7,6 +7,7 @@ class BuyersController < ApplicationController
     lst = current_user
     @buyer = lst[0]
     @usertype = lst[1]
+    puts @buyer
     @orders = @buyer.orders
   end
 

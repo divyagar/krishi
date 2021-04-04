@@ -1,5 +1,16 @@
+<div class="farmer-dashboard">
+  <div class = "navbar">
+    <div class = "logo-img">
+      <%= image_tag "image.png" %>
+    </div>
 
-  <div class="farmer-dashboard">
+    <div class = "navbar-links">
+      <a href = "#"> Home </a>
+      <a href = "#"> Buy Vegetables </a>
+      <a href = "#"> Buy Fruits </a>
+      <a href = "#"> Buy Seeds </a>
+    </div>
+  </div>
     <div class="farmer-info">
       <div class="name">
         <h2><%= @farmer.name %></h2>
@@ -34,6 +45,6 @@
           } %>
         <% end %>
       <% end %>
-
     </div>
   </div>
+</div>
