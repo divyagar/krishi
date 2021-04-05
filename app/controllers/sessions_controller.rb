@@ -18,4 +18,20 @@ class SessionsController < ApplicationController
       end
     end
   end
+
+  def destroy
+    lst = current_user
+    puts @usertype
+    if @usertype == "buyer"
+      session[:current_buyer_id] = nil
+      @usertype = nil
+    else
+      session[:current_farmer_id] = nil
+      @usertype = nil
+    end
+
+    puts "done #{session[:current_buyer_id]}"
+    redirect_to "/"
+  end
+
 end

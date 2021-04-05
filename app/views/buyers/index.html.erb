@@ -1,18 +1,4 @@
 <div class="buyer-dashboard">
-  
-  <div class = "navbar">
-    <div class = "logo-img">
-      <%= image_tag "image.png" %>
-    </div>
-
-    <div class = "navbar-links">
-      <a href = "#"> Home </a>
-      <%= link_to "Buy Vegetables", "buy_vegetables/" %>
-      <%= link_to "Buy Fruits", "buy_fruits/" %>
-      <%= link_to "Buy Seeds", "buy_seeds/" %>
-      <%= link_to "Cart", cart_item_index_path %>
-    </div>
-  </div>
     <div class="buyer-info">
         <div class="name">
             <h2><%= @buyer.name %></h2>

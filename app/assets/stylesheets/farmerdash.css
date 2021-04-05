@@ -3,36 +3,6 @@ div.farmer-dashboard div.farmer-info {
   padding: 40px 70px;
 }
 
-div.farmer-dashboard div.navbar {
-  display: flex;
-}
-
-div.farmer-dashboard div.navbar div.logo-img {
-  margin-top: 5px;
-  flex: 50%;
-}
-
-div.farmer-dashboard div.navbar img {
-  height: 50px;
-}
-
-div.farmer-dashboard div.navbar div.navbar-links {
-  flex: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 20px 0px 20px 50px;
-}
-
-div.farmer-dashboard div.navbar a {
-  text-decoration: none;
-  color: #071a52;
-  font-size: 22px;
-  font-weight: 600;
-  font-family: 'Didact Gothic', sans-serif;
-  transition: 0.5s;
-}
-
 div.farmer-dashboard div.name h2 {
   font-size: 45px;
   color: #071a52;

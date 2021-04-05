@@ -35,7 +35,7 @@ div.buy-vegetables div.search-container form input[type="text"] {
 div.buy-vegetables div.search-container form input[type="submit"] {
     padding: 15px 40px;
     font-size: 18px;
-    background: #17b978;
+    background: #80fc50;
     border: none;
     cursor: pointer;
     outline: none;
@@ -93,7 +93,7 @@ div.buy-vegetables div.vegetable-info div.vegetable-add button {
     margin: 10px 0px;
     border-radius: 10px;
     border: none;
-    background: #17b978;
+    background: #80fc50;
     outline: none;
     cursor: pointer;
     display: none;
@@ -115,7 +115,7 @@ div.buy-vegetables .vegetable-add-form input[type="number"] {
     width: 60%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #17b978;
+    border: 1px solid #80fc50;
     outline: none;
 }
 
@@ -124,7 +124,7 @@ div.buy-vegetables .vegetable-add-form input[type="submit"] {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border: none;
-    background: #17b978;
+    background: #80fc50;
     outline: none;
     cursor: pointer;
 }

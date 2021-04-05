@@ -9,6 +9,56 @@
   </head>
 
   <body>
+    <% if @page != "Home" && @page != "New buyer" && @page != "New farmer" %>
+      <% if @current_user == nil %>
+        <div class = "navbar">
+          <div class = "logo-img">
+            <%= image_tag "image.png" %>
+          </div>
+
+          <div class = "navbar-links">
+            <%= link_to "Home", "/" %>
+            <%= link_to "Buy Vegetables", vegetable_buy_path %>
+            <%= link_to "Buy Fruits", fruits_buy_path %>
+            <%= link_to "Buy Seeds", seeds_buy_path %>
+          </div>
+        </div>
+
+      <% else %>
+        <% if @usertype == "farmer" %>
+          <div class = "navbar">
+            <div class = "logo-img">
+              <%= image_tag "image.png" %>
+            </div>
+
+            <div class = "navbar-links">
+              <%= link_to "Home", farmers_path %>
+              <%= link_to "New item", "/" %>
+              <%= link_to "Edit items", "/" %>
+              <%= link_to "Delete items", "/" %>
+              <%= link_to "Log out", destroy_session_path, :method => :delete %>
+            </div>
+          </div>
+
+        <% else %>
+          <div class = "navbar">
+            <div class = "logo-img">
+              <%= image_tag "image.png" %>
+            </div>
+
+            <div class = "navbar-links">
+            <%= link_to "Home", buyers_path %>
+              <%= link_to "Buy Vegetables", "buy_vegetables/" %>
+              <%= link_to "Buy Fruits", "buy_fruits/" %>
+              <%= link_to "Buy Seeds", "buy_seeds/" %>
+              <%= link_to "Cart", cart_item_index_path %>
+              <%= link_to "Log out", destroy_session_path, :method => :delete %>
+            </div>
+          </div>
+
+        <% end %>
+      <% end %>
+    <% end %>
 
 
     <%= yield %>

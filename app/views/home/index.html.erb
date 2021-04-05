@@ -9,9 +9,12 @@
 
           <div class = "navbar-links">
             <a href = "#"> Home </a>
-            <%= link_to "Buy Vegetables", "buy_vegetables/" %>
-            <%= link_to "Buy Fruits", "buy_fruits/" %>
-            <%= link_to "Buy Seeds", "buy_seeds/" %>
+            <%= link_to "Buy Vegetables", vegetable_buy_path %>
+            <%= link_to "Buy Fruits", fruits_buy_path %>
+            <%= link_to "Buy Seeds", seeds_buy_path %>
+            <% if @current_user != nil %>
+              <%= link_to "Log out", destroy_session_path, :method => :delete %>
+            <% end %>
           </div>
         </div>
       </div>

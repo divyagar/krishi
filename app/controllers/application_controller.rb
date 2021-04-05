@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   def current_user
     # [@current_user, @usertype] if @current_user
     # @usertype if @usertype
+    puts "in application controllerrrrrrrrrrrrrrrrrrrrr"
+    puts session[:current_buyer_id]
     if session[:current_farmer_id]
       @current_user = Farmer.find(session[:current_farmer_id])
       @usertype = "farmer"

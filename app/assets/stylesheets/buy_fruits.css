@@ -139,7 +139,7 @@ div.buy-fruits div.search-container form input[type="text"] {
 div.buy-fruits div.search-container form input[type="submit"] {
     padding: 15px 40px;
     font-size: 18px;
-    background: #17b978;
+    background: #80fc50;
     border: none;
     cursor: pointer;
     outline: none;
@@ -197,7 +197,7 @@ div.buy-fruits div.fruit-info div.fruit-add button {
     margin: 10px 0px;
     border-radius: 10px;
     border: none;
-    background: #17b978;
+    background: #80fc50;
     outline: none;
     cursor: pointer;
     display: none;
@@ -219,7 +219,7 @@ div.buy-fruits .fruit-add-form input[type="number"] {
     width: 60%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #17b978;
+    border: 1px solid #80fc50;
     outline: none;
 }
 
@@ -228,7 +228,7 @@ div.buy-fruits .fruit-add-form input[type="submit"] {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border: none;
-    background: #17b978;
+    background: #80fc50;
     outline: none;
     cursor: pointer;
 }
