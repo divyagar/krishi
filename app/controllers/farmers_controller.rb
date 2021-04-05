@@ -1,9 +1,11 @@
 class FarmersController < ApplicationController
   def new
+    @page = "New farmer"
     render "new"
   end
 
   def index
+    @page = "Farmer dashboard"
     lst = current_user
     @farmer = lst[0]
     @usertype = lst[1]
@@ -35,9 +37,5 @@ class FarmersController < ApplicationController
       flash[:error] = "Error while creating farmer"
       redirect_to farmers_path
     end
-  end
-
-  def show
-    id = params[:id]
   end
 end

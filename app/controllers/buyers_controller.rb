@@ -1,5 +1,6 @@
 class BuyersController < ApplicationController
   def new
+    @page = "New buyer"
     render "new"
   end
 
@@ -9,6 +10,7 @@ class BuyersController < ApplicationController
     @usertype = lst[1]
     puts @buyer
     @orders = @buyer.orders
+    @page = "Buyer dashboard"
   end
 
   def create

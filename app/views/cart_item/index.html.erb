@@ -2,10 +2,11 @@
     <h2>Your cart</h2>
     <div class="cart-items-container">
       <div class="items">
-        <%= render partial: "item" %>
-        <%= render partial: "item" %>
-        <%= render partial: "item" %>
-        <%= render partial: "item" %>
+        <% for item in @items%>
+          <%= render partial: "item" , locals: {
+            item: item
+          } %>
+        <% end %>
       </div>
     </div>
 </div>

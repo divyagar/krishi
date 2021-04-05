@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
       @current_user = Buyer.find(session[:current_buyer_id])
       @usertype = "buyer"
       [@current_user, @usertype]
+    else
+      []
     end
   end
 end

@@ -28,9 +28,11 @@
             <button class="fruit-add-btn">Add to cart</button>
         </div>
 
-        <div id="fruit-add-form0" class="fruit-add-form">
-            <input type="number" placeholder="Quantity" />
-            <input type="submit" value="Add" />
-        </div>
+        <%= form_with url: cart_item_index_path, id: "fruit-add-form0", class: "fruit-add-form" do |form| %>
+            <%= form.hidden_field :itemid, value: item.id %>
+            <%= form.hidden_field :buyerid, value: @current_user_id %>
+            <%= form.number_field :quantity, placeholder: "Quantity" %>
+            <%= form.submit "Add" %>
+        <% end %>
     </div>
 </div>

@@ -24,13 +24,15 @@
             <p><%= Farmer.find(item.farmer_id).name %> </p>
         </div>
 
-        <div id="vegetable-add0" class="vegetable-add">
+        <div id=<%= "vegetable-add0" %> class="vegetable-add">
             <button class="vegetable-add-btn">Add to cart</button>
         </div>
 
-        <div id="vegetable-add-form0" class="vegetable-add-form">
-            <input type="number" placeholder="Quantity" />
-            <input type="submit" value="Add" />
-        </div>
+        <%= form_with url: cart_item_index_path, id: "vegetable-add-form0", class: "vegetable-add-form" do |form| %>
+            <%= form.hidden_field :itemid, value: item.id %>
+            <%= form.hidden_field :buyerid, value: @current_user_id %>
+            <%= form.number_field :quantity, placeholder: "Quantity" %>
+            <%= form.submit "Add" %>
+        <% end %>
     </div>
 </div>

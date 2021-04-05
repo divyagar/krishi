@@ -96,21 +96,22 @@ div.buy-vegetables div.vegetable-info div.vegetable-add button {
     background: #17b978;
     outline: none;
     cursor: pointer;
-}
-
-div.buy-vegetables div.vegetable-info div.vegetable-add-form {
-    padding: 10px 0px;
     display: none;
 }
 
-div.buy-vegetables div.vegetable-add-form input {
+div.buy-vegetables div.vegetable-info .vegetable-add-form {
+    padding: 10px 0px;
+    display: flex;
+}
+
+div.buy-vegetables .vegetable-add-form input {
     padding: 10px;
     margin: 0px;
     font-size: 18px;
     font-family: 'Akaya Telivigala', cursive;
 }
 
-div.buy-vegetables div.vegetable-add-form input[type="number"] {
+div.buy-vegetables .vegetable-add-form input[type="number"] {
     width: 60%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -118,7 +119,7 @@ div.buy-vegetables div.vegetable-add-form input[type="number"] {
     outline: none;
 }
 
-div.buy-vegetables div.vegetable-add-form input[type="submit"] {
+div.buy-vegetables .vegetable-add-form input[type="submit"] {
     width: 32%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;

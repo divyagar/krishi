@@ -200,21 +200,22 @@ div.buy-fruits div.fruit-info div.fruit-add button {
     background: #17b978;
     outline: none;
     cursor: pointer;
-}
-
-div.buy-fruits div.fruit-info div.fruit-add-form {
-    padding: 10px 0px;
     display: none;
 }
 
-div.buy-fruits div.fruit-add-form input {
+div.buy-fruits div.fruit-info .fruit-add-form {
+    padding: 10px 0px;
+    display: flex;
+}
+
+div.buy-fruits .fruit-add-form input {
     padding: 10px;
     margin: 0px;
     font-size: 18px;
     font-family: 'Akaya Telivigala', cursive;
 }
 
-div.buy-fruits div.fruit-add-form input[type="number"] {
+div.buy-fruits .fruit-add-form input[type="number"] {
     width: 60%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -222,7 +223,7 @@ div.buy-fruits div.fruit-add-form input[type="number"] {
     outline: none;
 }
 
-div.buy-fruits div.fruit-add-form input[type="submit"] {
+div.buy-fruits .fruit-add-form input[type="submit"] {
     width: 32%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
