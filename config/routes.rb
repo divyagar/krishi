@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   post "/buy_fruits/search" => "cart_item#search"
   post "/buy_seeds/search" => "cart_item#search"
 
+  delete "/delete_cart_item" => "cart_item#destroy", as: :destroy_cart_item
 
-  resources :farmers, :buyers, :sessions, :cart_item
+  resources :farmers, :buyers, :sessions, :cart_item, :items
 end

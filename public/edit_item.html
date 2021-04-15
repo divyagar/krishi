@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> Edit item </title>
+    <link rel="stylesheet" href="edit_item.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Didact+Gothic&family=Exo:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="edit-item">
+        <h2>
+            Edit item
+        </h2>
+
+        <form>
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+            </div>
+
+            <div class="form-field">
+                <label for="itemtype">Item type</label>
+                <select id="itemtype">
+                    <option value="Vegetable">Vegetable</option>
+                    <option value="Fruit">Fruit</option>
+                    <option value="Seed">Seed</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="quantity">Quantity</label>
+                <input type="integer" id="quantity" />
+            </div>
+
+            <div class="form-field">
+                <label for="price_per_kilo">Price per kilo</label>
+                <input type="integer" id="price_per_kilo" />
+            </div>
+
+            <div class="form-field">
+                <input type="submit" value="Edit item" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

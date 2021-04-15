@@ -1,0 +1,56 @@
+div.edit-item {
+    width: 30%;
+    margin: 50px auto;
+    border: 1px solid;
+    padding: 20px 0px 30px;
+}
+
+div.edit-item h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0px 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #071a52;
+    text-align: center;
+}
+
+div.edit-item form {
+    width: 70%;
+    margin: 0px auto;
+}
+
+div.edit-item div.form-field {
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+}
+
+div.edit-item label {
+    display: block;
+    font-size: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 5px 0px;
+    font-weight: 600;
+
+}
+
+div.edit-item form input,
+select {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+div.edit-item input[type="submit"] {
+    margin-top: 15px;
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    background: #071a52;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}

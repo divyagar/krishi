@@ -24,6 +24,13 @@
             <p><%= Buyer.find(item.buyer_id).name %></p>
         </div>
 
+        <%= form_with url: cart_item_index_path, id: "seed-add-form0", class: "seed-add-form" do |form| %>
+            <%= form.hidden_field :itemid, value: item.id %>
+            <%= form.hidden_field :buyerid, value: @current_user_id %>
+            <%= form.number_field :quantity, placeholder: "Quantity" %>
+            <%= form.submit "Add" %>
+        <% end %>
+
         <div class="remove-item">
             <button class="item-remove-btn">Remove</button>
         </div>
